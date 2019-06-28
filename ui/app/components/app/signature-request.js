@@ -163,7 +163,7 @@ SignatureRequest.prototype.renderBalance = function () {
   const balanceInEther = conversionUtil(balance, {
     fromNumericBase: 'hex',
     toNumericBase: 'dec',
-    fromDenomination: 'WEI',
+    fromDenomination: 'MIS',
     numberOfDecimals: 6,
     conversionRate,
   })
@@ -172,7 +172,7 @@ SignatureRequest.prototype.renderBalance = function () {
 
     h('div.request-signature__balance-text', `${this.context.t('balance')}:`),
 
-    h('div.request-signature__balance-value', `${balanceInEther} ETH`),
+    h('div.request-signature__balance-value', `${balanceInEther} ARS`),
 
   ])
 }

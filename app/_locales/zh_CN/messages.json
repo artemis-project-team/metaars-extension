@@ -78,11 +78,11 @@
     "message": "数量 + Gas"
   },
   "appDescription": {
-    "message": "以太坊浏览器插件",
+    "message": "阿特币浏览器插件",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MetaArs",
     "description": "The name of the application"
   },
   "approved": {
@@ -250,7 +250,7 @@
     "message": "精确小数点"
   },
   "defaultNetwork": {
-    "message": "默认以太坊交易网络为主网。"
+    "message": "默认阿特币(Artemis)交易网络为主网。"
   },
   "denExplainer": {
     "message": "你的 DEN 是存储在 MetaMask 中的已加密密码。"
@@ -260,6 +260,10 @@
   },
   "depositBTC": {
     "message": "将你的 BTC 存入到下面的地址："
+  },
+  "depositCoin": {
+    "message": "将你的 $1 存入到下面的地址",
+    "description": "Tells the user what coin they have selected to deposit with shapeshift"
   },
   "depositEth": {
     "message": "存入 Eth"
@@ -488,6 +492,9 @@
   },
   "kovan": {
     "message": "Kovan 测试网络"
+  },
+  "artemis": {
+      "message": "Artemis网络"
   },
   "knowledgeDataBase": {
     "message": "浏览我们的知识库"
@@ -798,13 +805,13 @@
     "message": "发送"
   },
   "sendETH": {
-    "message": "发送 ETH"
+    "message": "发送 ARS"
   },
   "sendTokens": {
     "message": "发送 代币"
   },
   "onlySendToEtherAddress": {
-    "message": "只发送 ETH 给一个以太坊地址"
+    "message": "只发送 ARS 给一个阿特币地址"
   },
   "searchTokens": {
     "message": "搜索代币"
@@ -984,7 +991,7 @@
     "message": "警告"
   },
   "welcome": {
-    "message": "欢迎使用 MetaMask 测试版"
+    "message": "欢迎使用 MetaArs 测试版"
   },
   "whatsThis": {
     "message": "这是什么？"

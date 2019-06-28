@@ -11,4 +11,5 @@ export const NETWORK_TYPES = {
   RINKEBY: 'rinkeby',
   ROPSTEN: 'ropsten',
   GOERLI: 'goerli',
+  ARTEMIS: 'artemis',
 }

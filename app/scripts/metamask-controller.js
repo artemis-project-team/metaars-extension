@@ -110,6 +110,9 @@ module.exports = class MetamaskController extends EventEmitter {
 
     // currency controller
     this.currencyRateController = new CurrencyRateController(undefined, initState.CurrencyController)
+    if (typeof initState.CurrencyController === 'undefined') {
+      this.currencyRateController.nativeCurrency = 'ARS'
+    }
 
     // infura controller
     this.infuraController = new InfuraController({

@@ -50,6 +50,9 @@ Network.prototype.render = function () {
   } else if (providerName === 'goerli') {
     hoverText = context.t('goerli')
     iconName = 'goerli-test-network'
+  } else if (providerName === 'artemis') {
+    hoverText = context.t('artemis')
+    iconName = 'artemis-network'
   } else {
     hoverText = providerId
     iconName = 'private-network'
@@ -64,6 +67,7 @@ Network.prototype.render = function () {
         'kovan-test-network': providerName === 'kovan',
         'rinkeby-test-network': providerName === 'rinkeby',
         'goerli-test-network': providerName === 'goerli',
+        'artemis-network': providerName === 'artemis',
       }),
       title: hoverText,
       onClick: (event) => {
@@ -114,14 +118,14 @@ Network.prototype.render = function () {
               h('.network-name', context.t('rinkeby')),
               h('.network-indicator__down-arrow'),
             ])
-          case 'goerli-test-network':
+          case 'artemis-network':
             return h('.network-indicator', [
               h(NetworkDropdownIcon, {
-                backgroundColor: '#3099f2', // $dodger-blue
-                nonSelectBackgroundColor: '#ecb23e',
+                backgroundColor: '#129c03', // $dodger-blue
+                nonSelectBackgroundColor: '#129c0e',
                 loading: networkNumber === 'loading',
               }),
-              h('.network-name', context.t('goerli')),
+              h('.network-name', context.t('artemis')),
               h('.network-indicator__down-arrow'),
             ])
           default:

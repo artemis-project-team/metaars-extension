@@ -15,7 +15,7 @@ function reduceMetamask (state, action) {
     isUnlocked: false,
     isAccountMenuOpen: false,
     isPopup: getEnvironmentType(window.location.href) === ENVIRONMENT_TYPE_POPUP,
-    rpcTarget: 'https://rawtestrpc.metamask.io/',
+    rpcTarget: 'http://10.0.2.93:8000',
     identities: {},
     unapprovedTxs: {},
     frequentRpcList: [],
